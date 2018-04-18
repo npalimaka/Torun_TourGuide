@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * This class represents locations, hotels, restaurants, events.
+ */
 @Getter
 @Setter
 @AllArgsConstructor
