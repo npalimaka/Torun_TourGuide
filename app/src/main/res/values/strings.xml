@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copernicus">Nicolaus Copernicus Monument</string>
+    <string name="copernicus_details">One of the most important symbols of Torun</string>
+    <string name="tower">The Leaning Tower</string>
+    <string name="tower_details">A medieval defensive Tower with a considerable tilt</string>
 </resources>
