@@ -12,14 +12,18 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Attraction {
 
-    private String attractionName;
-    private String description;
-    private int imageResourceID;
-    private String address;
+    private final int NO_IMAGE_PROVIDED = -1;
+    private String mAttractionName;
+    private String mDescription;
+    private int mImageResourceID;
+    private String mAddress;
 
     public Attraction(String name, String description, String address){
-        this.attractionName = name;
-        this.description = description;
-        this.address = address;
+        this.mAttractionName = name;
+        this.mDescription = description;
+        this.mAddress = address;
+    }
+    public boolean hasImage(){
+        return this.mImageResourceID != NO_IMAGE_PROVIDED;
     }
 }
