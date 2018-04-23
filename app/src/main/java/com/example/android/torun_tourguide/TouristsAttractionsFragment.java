@@ -41,6 +41,22 @@ public class TouristsAttractionsFragment extends Fragment {
                 "geo:0,0?q=1600 Nicolaus Copernicus Monument, Torun, Poland"));
         attractions.add(new Attraction(R.string.tower, R.string.tower_details, R.drawable.leaning_tower,
                 "geo:0,0?q=1600 The Leaning Tower, Torun, Poland"));
+        attractions.add(new Attraction(R.string.town_hall, R.string.hall_details, R.drawable.town_hall,
+                "geo:0,0?q=1600 The Old Town Hall, Torun, Poland"));
+        attractions.add(new Attraction(R.string.copernicus_house, R.string.house_details, R.drawable.copernicus_house,
+                "geo:0,0?q=1600 House of Nicolaus Copernicus, Torun, Poland"));
+        attractions.add(new Attraction(R.string.castle, R.string.castle_details, R.drawable.castle,
+                "geo:0,0?q=1600 Teutonic Knight Castle, Torun, Poland"));
+        attractions.add(new Attraction(R.string.gate, R.string.gate_details, R.drawable.bridge_gate,
+                "geo:0,0?q=1600 Brama Mostowa, Torun, Poland"));
+        attractions.add(new Attraction(R.string.cathedral, R.string.cathedral_details, R.drawable.cathedral,
+                "geo:0,0?q=1600 SS Johns Cathedral, Torun, Poland"));
+        attractions.add(new Attraction(R.string.gingerbread, R.string.gingerbread_details, R.drawable.gingerbread,
+                "geo:0,0?q=1600 Gingerbread Museum, Torun, Poland"));
+        attractions.add(new Attraction(R.string.convent, R.string.convent_details, R.drawable.convent_gate,
+                "geo:0,0?q=1600 Brama Klasztorna, Torun, Poland"));
+        attractions.add(new Attraction(R.string.holy_spirit, R.string.holy_spirit_detail, R.drawable.holy_spirit,
+                "geo:0,0?q=1600 Holy Spirit Church, Torun, Poland"));
         AttractionsAdapter adapter = new AttractionsAdapter(getActivity(), attractions, new MyOnClickListener() {
             @Override
             public void onItemClick(View view, int position) {

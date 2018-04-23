@@ -24,7 +24,7 @@
         <TextView
             android:id="@+id/attraction_name"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="32dp"
             android:layout_alignParentTop="true"
             android:paddingTop="8dp"
             android:textAppearance="?android:textAppearanceMedium"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:layout_below="@id/attraction_name"
-            android:layout_height="44dp"
+            android:layout_height="wrap_content"
             />
     </RelativeLayout>
     <LinearLayout

@@ -3,8 +3,24 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="copernicus">Nicolaus Copernicus Monument</string>
+    <string name="copernicus">Copernicus Statue</string>
     <string name="copernicus_details">One of the most important symbols of Torun</string>
     <string name="tower">The Leaning Tower</string>
     <string name="tower_details">A medieval defensive Tower with a considerable tilt</string>
+    <string name="town_hall">The Old Town Hall</string>
+    <string name="hall_details">One of the largest brick buildings of that kind in Europe</string>
+    <string name="copernicus_house">The Copernicus\' House</string>
+    <string name="house_details">A medieval burgher\'s house belonged to Copernicus family</string>
+    <string name="castle">Teutonic Knights\' Castle</string>
+    <string name="castle_details">Among the oldest  structures of that kind. Its construstion began in mid 13th century</string>
+    <string name="gate">The Bridge Gate</string>
+    <string name="gate_details">Built in 1432, initially it was called the Crossing Gate or Ferry Gate</string>
+    <string name="cathedral">SS. Johns\' Cathedral</string>
+    <string name="cathedral_details">The Gothic Cathedral of St. John the Baptist and St. John the Evangelist</string>
+    <string name="gingerbread">Gingerbread Museum</string>
+    <string name="gingerbread_details">It is a place where the history has the smell and the taste of gingerbread adventure</string>
+    <string name="convent">The Convent Gate</string>
+    <string name="convent_details">Also called the Holy Spirit Gate, erected as one of four gates leading into Torun</string>
+    <string name="holy_spirit">Holy Spirit Church</string>
+    <string name="holy_spirit_detail">Late-Baroque edifice raised in mid-18th century as an Evangelical church</string>
 </resources>
