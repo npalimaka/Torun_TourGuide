@@ -19,6 +19,8 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if(position == 0){
             return new TouristsAttractionsFragment();
+        }if(position == 1){
+            return new AccommodationFragment();
         }else {
             return new TouristsAttractionsFragment();
         }

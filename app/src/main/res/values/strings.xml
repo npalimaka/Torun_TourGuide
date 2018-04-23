@@ -23,4 +23,22 @@
     <string name="convent_details">Also called the Holy Spirit Gate, erected as one of four gates leading into Torun</string>
     <string name="holy_spirit">Holy Spirit Church</string>
     <string name="holy_spirit_detail">Late-Baroque edifice raised in mid-18th century as an Evangelical church</string>
+    <string name="hotel1">1231 Hotel****</string>
+    <string name="holtel1_details">Boutique hotel where the building combines modern décor with history of renovated 13th century Old Mill</string>
+    <string name="bulwar">Hotel Bulwar****</string>
+    <string name="bulwar_details">The historical building Koszary Racławickie, today\'s Hotel Bulwar, was constructed 1819–1822 as military barracks</string>
+    <string name="hotel_copernicus">Copernicus Hotel****</string>
+    <string name="hotel_copernicus_details">A modern and comfortably equipped object - top choice for family vacation, company meetings</string>
+    <string name="mercure">Hotel Mercure****</string>
+    <string name="mercure_details">Situated in the city center, close to the old town and the birthplace of Nicolaus Copernicus</string>
+    <string name="filmar">Hotel Filmar****</string>
+    <string name="filmar_details">An outstanding venue for conferences, business meetings and private celebrations</string>
+    <string name="nova">Nova Apartamenty</string>
+    <string name="nova_details">The charm of a over hundredyearold building with all the modern conveniences of a contemporary apartment</string>
+    <string name="roze">Roze i Zen Apartamenty</string>
+    <string name="roze_details">In the heart of the city centre with a restaurant that you must try out</string>
+    <string name="freedom">Freedom Hostel</string>
+    <string name="freedom_details">A really cosy and romantic place. We make sure that you feel totally at home</string>
+    <string name="mcsm">MCSM Hostel</string>
+    <string name="mcsm_details">A perfect place to stay longer in Toruń and spend your spare time actively</string>
 </resources>

@@ -8,6 +8,7 @@
         android:id="@+id/location_photo"
         android:layout_width="124dp"
         android:layout_height="100dp"
+        android:layout_centerVertical="true"
         android:padding="8dp"/>
 
     <RelativeLayout
