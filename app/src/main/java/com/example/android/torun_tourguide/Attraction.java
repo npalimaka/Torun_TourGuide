@@ -15,15 +15,16 @@ public class Attraction {
     private final int NO_IMAGE_PROVIDED = -1;
     private int mAttractionName;
     private int mDescription;
-    private int mImageResourceID;
+    private int mImageResourceID = NO_IMAGE_PROVIDED;
     private String mAddress;
 
-    public Attraction(int name, int description, String address){
+    public Attraction(int name, int description, String address) {
         this.mAttractionName = name;
         this.mDescription = description;
         this.mAddress = address;
     }
-    public boolean hasImage(){
+
+    public boolean hasImage() {
         return this.mImageResourceID != NO_IMAGE_PROVIDED;
     }
 }

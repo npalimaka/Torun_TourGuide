@@ -71,5 +71,4 @@ public class AccommodationFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         return rootView;
     }
-
 }

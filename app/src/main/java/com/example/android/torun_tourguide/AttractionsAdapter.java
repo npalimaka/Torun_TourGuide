@@ -10,23 +10,31 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+/**
+ * This class is responsible for connecting all views to their resources
+ */
 public class AttractionsAdapter extends RecyclerView.Adapter {
 
     private Context context;
     private MyOnClickListener listener;
     private ArrayList<Attraction> attractionArraList;
-    private RecyclerView recyclerView;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView mTitle;
-        public TextView mDetails;
-        public ImageView mPhoto;
+        @BindView(R.id.attraction_name)
+        TextView mTitle;
+        @BindView(R.id.attraction_details)
+        TextView mDetails;
+        @BindView(R.id.location_photo)
+        ImageView mPhoto;
+        @BindView(R.id.place_icon)
+        ImageView test;
 
-        public ViewHolder(View pItem) {
-            super(pItem);
-            mTitle = pItem.findViewById(R.id.attraction_name);
-            mDetails = pItem.findViewById(R.id.attraction_details);
-            mPhoto = pItem.findViewById(R.id.location_photo);
+        public ViewHolder(View view) {
+            super(view);
+            ButterKnife.bind(this, view);
         }
     }
 
@@ -46,7 +54,7 @@ public class AttractionsAdapter extends RecyclerView.Adapter {
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.onItemClick(view, mViewHolder.getPosition());
+                listener.onItemClick(view, mViewHolder.getLayoutPosition());
             }
         });
         return mViewHolder;
@@ -63,6 +71,7 @@ public class AttractionsAdapter extends RecyclerView.Adapter {
             ((ViewHolder) holder).mPhoto.setVisibility(View.VISIBLE);
         } else {
             ((ViewHolder) holder).mPhoto.setVisibility(View.GONE);
+            ((ViewHolder) holder).test.setImageResource(R.drawable.ic_event_white_24dp);
         }
     }
 

@@ -12,21 +12,25 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout mDrawerLayout;
+    @BindView(R.id.drawer_layout)
+    DrawerLayout mDrawerLayout;
+    @BindView(R.id.viewpager)
+    ViewPager viewPager;
+    @BindView(R.id.nav_view)
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mDrawerLayout = findViewById(R.id.drawer_layout);
+        ButterKnife.bind(this);
 
-        ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(new CategoriesAdapter(getSupportFragmentManager(), this));
-
-
-        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -42,6 +46,5 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
-
     }
 }
