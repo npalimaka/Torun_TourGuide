@@ -9,7 +9,7 @@
         android:layout_width="124dp"
         android:layout_height="100dp"
         android:layout_centerVertical="true"
-        android:padding="8dp"/>
+        android:padding="8dp" />
 
     <RelativeLayout
         android:id="@+id/text_container"
@@ -29,22 +29,23 @@
             android:layout_alignParentTop="true"
             android:paddingTop="8dp"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/attraction_details"
             android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_below="@id/attraction_name"
             android:layout_height="wrap_content"
-            />
+            android:layout_below="@id/attraction_name"
+            android:layout_marginTop="8dp" />
     </RelativeLayout>
+
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
         android:background="#1976D2">
+
         <ImageView
             android:id="@+id/place_icon"
             android:layout_width="24dp"

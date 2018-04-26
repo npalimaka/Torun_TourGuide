@@ -75,8 +75,10 @@
     <string name="lalek_details">Several theaters from different corners of Europe meet to show performances whose main aspect is animation</string>
     <string name="tofifest">Tofifest</string>
     <string name="tofifest_details">International Film Festival with productions awarded in Berlin, Cannes or Locarno and promising debuts</string>
-    <string name="attractions">Attrations</string>
-    <string name="accommodation">Accommodation</string>
-    <string name="restaurants">Restaurants</string>
+    <string name="attractions">Monuments</string>
+    <string name="accommodation">Hotels</string>
+    <string name="restaurants">Bars</string>
     <string name="events">Events</string>
+    <string name="navigation_drawer_open">Drawer Opened</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
 </resources>
