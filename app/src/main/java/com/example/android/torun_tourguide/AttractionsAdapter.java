@@ -14,13 +14,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * This class is responsible for connecting all views to their resources
+ * This class is responsible for connecting all single item views to their resources
  */
 public class AttractionsAdapter extends RecyclerView.Adapter {
 
     private Context context;
     private MyOnClickListener listener;
-    private ArrayList<Attraction> attractionArraList;
+    private ArrayList<Attraction> attractionArrayList;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.attraction_name)
@@ -30,7 +30,7 @@ public class AttractionsAdapter extends RecyclerView.Adapter {
         @BindView(R.id.location_photo)
         ImageView mPhoto;
         @BindView(R.id.place_icon)
-        ImageView test;
+        ImageView mImage;
 
         public ViewHolder(View view) {
             super(view);
@@ -38,8 +38,9 @@ public class AttractionsAdapter extends RecyclerView.Adapter {
         }
     }
 
-    public AttractionsAdapter(Context context, ArrayList<Attraction> attractions, MyOnClickListener listener) {
-        this.attractionArraList = new ArrayList<>(attractions);
+    public AttractionsAdapter(Context context, ArrayList<Attraction> attractions,
+                              MyOnClickListener listener) {
+        this.attractionArrayList = new ArrayList<>(attractions);
         this.context = context;
         this.listener = listener;
     }
@@ -62,21 +63,21 @@ public class AttractionsAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
-        Attraction attraction = attractionArraList.get(position);
-        ((ViewHolder) holder).mTitle.setText(attractionArraList.get(position).getMAttractionName());
-        ((ViewHolder) holder).mDetails.setText(attractionArraList.get(position).getMDescription());
+        Attraction attraction = attractionArrayList.get(position);
+        ((ViewHolder) holder).mTitle.setText(attractionArrayList.get(position).getMAttractionName());
+        ((ViewHolder) holder).mDetails.setText(attractionArrayList.get(position).getMDescription());
 
         if (attraction.hasImage()) {
-            ((ViewHolder) holder).mPhoto.setImageResource(attractionArraList.get(position).getMImageResourceID());
+            ((ViewHolder) holder).mPhoto.setImageResource(attractionArrayList.get(position).getMImageResourceID());
             ((ViewHolder) holder).mPhoto.setVisibility(View.VISIBLE);
         } else {
             ((ViewHolder) holder).mPhoto.setVisibility(View.GONE);
-            ((ViewHolder) holder).test.setImageResource(R.drawable.ic_event_white_24dp);
+            ((ViewHolder) holder).mImage.setImageResource(R.drawable.ic_event_white_24dp);
         }
     }
 
     @Override
     public int getItemCount() {
-        return attractionArraList.size();
+        return attractionArrayList.size();
     }
 }

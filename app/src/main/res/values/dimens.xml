@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">108dp</dimen>
+    <dimen name="list_item_padding">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_background_size">72dp</dimen>
+    <dimen name="icon_background_margin">20dp</dimen>
+    <dimen name="photo_height">100dp</dimen>
+    <dimen name="photo_width">124dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+    <dimen name="nav_header_padding">16dp</dimen>
+    <dimen name="separator">1dp</dimen>
+</resources>
